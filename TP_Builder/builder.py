@@ -25,7 +25,9 @@ class Produit:
         self.parts.append(part)
 
     def affichage_partie(self):
-        print(f"Voici de quoi est composé le produit : {self.parts}")
+        print("Voici de quoi est composé le produit : ")
+        for parts in self.parts:
+            print(parts)
 
 class ProduitBulder:
     def __init__(self):
