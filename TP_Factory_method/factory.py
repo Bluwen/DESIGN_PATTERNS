@@ -40,11 +40,3 @@ class ElementFactory:
             return Allergene(nom_element, valeur_element, unite_element)
         else : 
             raise ValueError(f"Type d'élement inconnue: {type_element}")
-
-if __name__ == "__main__":
-    element1 = ElementFactory.create_element("Additif", "E512", 147.2, 1)
-    print(element1)
-    element2 = ElementFactory.create_element("Ingrédient", "Chataigne", 20.2, 2)
-    print(element2)
-    element3 = ElementFactory.create_element("Allergène", "Pomme", 2.0, 2)
-    print(element3)
